@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sala do Empreendedor</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js">
+
+  </script>
+  <h1 class="title">
+    <img class="logo" src="img/comercio.svg" alt="Paris">
+    Sala do Empreendedor
+  </h1>
+  <div class="topnav">
+    <a href="index.html">Inicio</a>
+    <a href="contato.html">Contato</a>
+    <a href="links.html">Links Uteis</a>
+    <a class="active" href="empreendedor.html">Seja um empreendedor</a>
+    <a href="local.html">Faça uma visita</a>
+
+  </div>
+
+
+  <form action="sebrae.php" method="get">
+    <center>
+      <table border="4px" bgcolor="#0052cc" bordercolor="#000">
+        <td align="center">
+
+          <label>CPF</label><br>
+          <input type="radio" name="id" value="cpf">
+
+          <label>CNPJ</label><br>
+          <input type="radio" name="id" value="cnpj">
+
+          <label>Numero</label><br>
+          <input id="text" name="num" placeholder="Informe o numero do CPF ou CNPJ">
+
+          <label>Nome Completo/Nome Empresa</label><br>
+          <input id="name" name="f_nome" placeholder="Seu nome ou da empresa">
+
+          <label>E-mail:</label><br>
+          <input type="email" name="f_email" placeholder="email@email.com">
+
+          <label>Telefone: </label><br>
+          <input type="number" name="f_telefone" placeholder="+551599996666">
+
+          <label>Endereço</label><br>
+          <input type="text" name="f_endereco" placeholder="Rua, nº, Bairro, Cidade, Estado">
+        <td>
+          <center>
+            <label for="birthday">Agendar</label>
+            <input type="date" id="birthday" name="data">
+
+            <label for="appt">Horario</label>
+            <input type="time" id="appt" name="hora">
+
+            <input type="submit" value="Enviar" class="button" onclick="displayRadioValue()">
+            <input type="reset" value="Limpar" class="button">
+          </center>
+
+        </td>
+        </td>
+      </table>
+    </center>
+  </form>
+
+  <br>
+  <footer class="footer">
+    <p>Desenvolvido por
+      <a href="https://github.com/darmiest">Daiana Momberg de Andrade<a>
+          e
+          <a href="https://www.linkedin.com/in/rafaela-morato/">Rafaela Venancio Morato<a>
+              <p>Telefones úteis
+                Sala do empreendedor (15)3272-9218 ramal 249/ (Sebrae) ramal 234/Corpo de Bombeiros - (15)3272-3840
+              </p>
+  </footer>
+</body>
+
+</html>
